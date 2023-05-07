@@ -1,0 +1,34 @@
+Delay 1000
+RunWin iexplore http://s3.amazonaws.com/rapgenius/hotdog.jpg
+Delay 5000
+PressModKey MOD_CTRL_LEFT KEY_S
+Delay 2000
+PrintLine %USERPROFILE%\hotdog.jpg
+Delay 2000
+PressModKey MOD_CTRL_LEFT KEY_W
+Delay 3000
+PressKey KEY_GUI_LEFT
+Delay 2000
+PrintLine paint
+Delay 5000
+PressModKey MOD_CTRL_LEFT KEY_A
+Delay 3000
+PrintLine %USERPROFILE%\hotdog.jpg
+Delay 4000
+PressModKey MOD_ALT_LEFT KEY_F
+Delay 3000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_TAB
+Delay 1000
+PressKey KEY_ENTER

